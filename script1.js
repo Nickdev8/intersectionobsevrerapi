@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        // Optioneel: één keer animeren en dan uit observer halen
         observer.unobserve(entry.target);
       }
     });
